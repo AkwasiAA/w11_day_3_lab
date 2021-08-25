@@ -24,6 +24,16 @@ public class ManagerTest {
     }
 
     @Test
+    public void managerHasSalary(){
+        assertEquals(80000, manager.getSalary(), 0.01);
+    }
+
+    @Test
+    public void managerHasDeptName(){
+        assertEquals("Back End", manager.getDeptName());
+    }
+
+    @Test
     public void canGetRaisedSalary(){
         manager.raiseSalary(500);
         assertEquals(80500, manager.getSalary(), 0.01);
