@@ -15,12 +15,24 @@ public abstract class Employee {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getNiNumber() {
         return niNumber;
     }
 
+    public void setNiNumber(String niNumber) {
+        this.niNumber = niNumber;
+    }
+
     public double getSalary() {
         return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public void raiseSalary(double amount){
